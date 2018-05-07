@@ -1,0 +1,248 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/FPGA_VIVADO/10DSP_TEST/DSP_TEST/DSP_TEST.sim/sim_1/behav/modelsim
+T_opt
+!s110 1525688098
+VZjQfjFFIJ4cW9i6oMc63f2
+04 6 4 work tb_top fast 0
+04 4 4 work glbl fast 0
+=1-448a5bee2e26-5af02720-272-3884
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vDSP_TEST
+Z2 !s10a 1525687452
+!s110 1525687470
+!i10b 1
+!s100 `5Ebd>5LN9=h:ED@DW2Ci3
+I[GLSJmY:7PUcI9U2I?@nY0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1525687452
+8../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v
+F../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v
+L0 13
+Z5 OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1525687470.000000
+Z6 !s107 ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v|
+Z7 !s90 -64|-incr|-work|xil_defaultlib|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v|../../../../DSP_TEST.srcs/sim_1/new/tb_top.v|
+!i113 0
+Z8 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@d@s@p_@t@e@s@t
+Edsp_test_dds_compiler_0_0
+R4
+Z9 DPx20 dds_compiler_v6_0_16 29 dds_compiler_v6_0_16_viv_comp 0 22 Y]LdPmg3`YBo^DZU3AFN92
+Z10 DPx17 xbip_utils_v3_0_9 14 xcc_utils_v3_0 0 22 Bd0ohWa6>n:PgLV0IZcm^2
+Z11 DPx17 xbip_utils_v3_0_9 21 xbip_utils_v3_0_9_pkg 0 22 QDo@IML[2Pl4g>BdUP16N1
+Z12 DEx20 dds_compiler_v6_0_16 20 dds_compiler_v6_0_16 0 22 <49lQjFHIoSmI9K:0F27C1
+Z13 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z14 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z15 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z16 8../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd
+Z17 F../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd
+l0
+L59
+VYA6nmMMW<XYoOoQG@h3zn2
+!s100 ^GI3K2ZDWG7J?WNa@i5;a0
+Z18 OL;C;10.5;63
+31
+!s110 1525688085
+!i10b 1
+Z19 !s108 1525688085.000000
+Z20 !s90 -64|-93|-work|xil_defaultlib|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_mult_gen_0_0/sim/DSP_TEST_mult_gen_0_0.vhd|
+Z21 !s107 ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_mult_gen_0_0/sim/DSP_TEST_mult_gen_0_0.vhd|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd|../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd|
+!i113 0
+Z22 o-93 -work xil_defaultlib
+Z23 tExplicit 1 CvgOpt 0
+Adsp_test_dds_compiler_0_0_arch
+R9
+R10
+R11
+R13
+R14
+R15
+DEx4 work 25 dsp_test_dds_compiler_0_0 0 22 YA6nmMMW<XYoOoQG@h3zn2
+l168
+L67
+V`=NIi6V3[[9]ci>PKGQfN2
+!s100 9WXOYUQS9L0ZOI32[><9a3
+R18
+31
+Z24 !s110 1525688086
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Edsp_test_dds_compiler_0_1
+R4
+R9
+R10
+R11
+R12
+R13
+R14
+R15
+R0
+Z25 8../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd
+Z26 F../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd
+l0
+L59
+Vgb<ik^HBa:]Emg=b38WiC0
+!s100 En3Yfim@0^hRmKgN3@ImU0
+R18
+31
+R24
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adsp_test_dds_compiler_0_1_arch
+R9
+R10
+R11
+R13
+R14
+R15
+DEx4 work 25 dsp_test_dds_compiler_0_1 0 22 gb<ik^HBa:]Emg=b38WiC0
+l168
+L67
+VMV`;>QbFbWTaPgRN7nGgP2
+!s100 T2jWXTb>2lDRDSICdd?4i1
+R18
+31
+R24
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Edsp_test_mult_gen_0_0
+R4
+Z27 DPx17 mult_gen_v12_0_14 26 mult_gen_v12_0_14_viv_comp 0 22 52V0:UR@9H>_;198[KM^N0
+DEx17 mult_gen_v12_0_14 17 mult_gen_v12_0_14 0 22 @z<c3;Q>jDGIM5Lo:`Z?S0
+R13
+R14
+R15
+R0
+Z28 8../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_mult_gen_0_0/sim/DSP_TEST_mult_gen_0_0.vhd
+Z29 F../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_mult_gen_0_0/sim/DSP_TEST_mult_gen_0_0.vhd
+l0
+L59
+V[H^[58Ii=A_=?NZ2EXDJV0
+!s100 l6YB<k2U1]SCEm8bli81;0
+R18
+31
+R24
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Adsp_test_mult_gen_0_0_arch
+R27
+R13
+R14
+R15
+DEx4 work 21 dsp_test_mult_gen_0_0 0 22 [H^[58Ii=A_=?NZ2EXDJV0
+l111
+L67
+V09Z`EQAJVadF>gXnbJIjL3
+!s100 OZ7aA?5?BD`Zi`[8PI;?o2
+R18
+31
+R24
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+vDSP_TEST_wrapper
+R2
+!s110 1525685463
+!i10b 1
+!s100 ^lD]GB7IO_CaFGdN2Z[dO2
+I561H89[k9Z?3BKYg]aX:51
+R3
+R0
+w1525685452
+8../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
+F../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
+L0 12
+R5
+r1
+!s85 0
+31
+!s108 1525685463.000000
+R6
+R7
+!i113 0
+R8
+R1
+n@d@s@p_@t@e@s@t_wrapper
+vglbl
+!s110 1525688087
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+IAl?5;D^:bf?I5A^M>WzmU1
+R3
+R0
+w1522801934
+8glbl.v
+Fglbl.v
+L0 6
+R5
+r1
+!s85 0
+31
+Z30 !s108 1525688086.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+R8
+R1
+vtb_top
+R24
+!i10b 1
+!s100 UA0ZS`cC=R6>8dcDlz]W?2
+Ig8HTS3T]Xzz2Bj=d5lNcX3
+R3
+R0
+w1525688067
+8../../../../DSP_TEST.srcs/sim_1/new/tb_top.v
+F../../../../DSP_TEST.srcs/sim_1/new/tb_top.v
+L0 23
+R5
+r1
+!s85 0
+31
+R30
+R6
+R7
+!i113 0
+R8
+R1

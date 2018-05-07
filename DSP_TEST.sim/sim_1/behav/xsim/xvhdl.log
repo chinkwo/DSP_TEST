@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/FPGA_VIVADO/10DSP_TEST/DSP_TEST/DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DSP_TEST_dds_compiler_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/FPGA_VIVADO/10DSP_TEST/DSP_TEST/DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DSP_TEST_dds_compiler_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/FPGA_VIVADO/10DSP_TEST/DSP_TEST/DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_mult_gen_0_0/sim/DSP_TEST_mult_gen_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity DSP_TEST_mult_gen_0_0

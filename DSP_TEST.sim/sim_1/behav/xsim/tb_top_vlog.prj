@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v" \
+"../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v" \
+"../../../../DSP_TEST.srcs/sim_1/new/tb_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
