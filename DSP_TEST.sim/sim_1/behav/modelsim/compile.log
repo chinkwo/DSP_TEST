@@ -7,7 +7,7 @@
 # Modifying modelsim.ini
 # ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 18:14:45 on May 07,2018
+# Start time: 11:06:24 on May 08,2018
 # vcom -64 -93 -work xil_defaultlib ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_mult_gen_0_0/sim/DSP_TEST_mult_gen_0_0.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -19,26 +19,47 @@
 # -- Compiling architecture DSP_TEST_dds_compiler_0_1_arch of DSP_TEST_dds_compiler_0_1
 # -- Compiling entity DSP_TEST_mult_gen_0_0
 # -- Compiling architecture DSP_TEST_mult_gen_0_0_arch of DSP_TEST_mult_gen_0_0
-# End time: 18:14:46 on May 07,2018, Elapsed time: 0:00:01
+# End time: 11:06:24 on May 08,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 18:14:46 on May 07,2018
-# vlog -64 -incr -work xil_defaultlib ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v 
-# -- Skipping module DSP_TEST
-# -- Skipping module DSP_TEST_wrapper
-# -- Compiling module tb_top
+# Start time: 11:06:24 on May 08,2018
+# vlog -64 -incr -work xil_defaultlib ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v 
+# -- Compiling module DSP_TEST
+# 
+# Top level modules:
+# 	DSP_TEST
+# End time: 11:06:24 on May 08,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 11:06:24 on May 08,2018
+# vcom -64 -93 -work xil_defaultlib ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DSP_TEST_fir_compiler_0_0
+# -- Compiling architecture DSP_TEST_fir_compiler_0_0_arch of DSP_TEST_fir_compiler_0_0
+# End time: 11:06:25 on May 08,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 11:06:25 on May 08,2018
+# vlog -64 -incr -work xil_defaultlib ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v 
+# -- Compiling module DSP_TEST_wrapper
+# -- Skipping module tb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 18:14:46 on May 07,2018, Elapsed time: 0:00:00
+# End time: 11:06:25 on May 08,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 18:14:46 on May 07,2018
+# Start time: 11:06:25 on May 08,2018
 # vlog -work xil_defaultlib glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 18:14:47 on May 07,2018, Elapsed time: 0:00:01
+# End time: 11:06:25 on May 08,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

@@ -13,6 +13,9 @@ vcom -work xil_defaultlib -64 -93 \
 vlog -work xil_defaultlib -64 -incr \
 "../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v" \
 
+vcom -work xil_defaultlib -64 -93 \
+"../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd" \
+
 vlog -work xil_defaultlib \
 "glbl.v"
 

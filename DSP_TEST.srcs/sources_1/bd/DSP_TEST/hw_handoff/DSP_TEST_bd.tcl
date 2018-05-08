@@ -155,9 +155,9 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
+  set M_AXIS_DATA_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:axis_rtl:1.0 M_AXIS_DATA_0 ]
 
   # Create ports
-  set P_0 [ create_bd_port -dir O -from 15 -to 0 -type data P_0 ]
   set aclk_0 [ create_bd_port -dir I -type clk aclk_0 ]
   set sin1 [ create_bd_port -dir O -from 7 -to 0 sin1 ]
   set sin2 [ create_bd_port -dir O -from 7 -to 0 sin2 ]
@@ -182,6 +182,24 @@ proc create_root_design { parentCell } {
    CONFIG.PINC1 {110011001100110011001100} \
  ] $dds_compiler_1
 
+  # Create instance: fir_compiler_0, and set properties
+  set fir_compiler_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0 ]
+  set_property -dict [ list \
+   CONFIG.Clock_Frequency {100.0} \
+   CONFIG.CoefficientVector {-6.515e-04, -6.14e-04, -5.887e-04, -5.607e-04, -5.114e-04, -4.184e-04, -2.568e-04, 0, 3.792e-04, 9.075e-04, 1.61e-03, 2.507e-03, 3.618e-03, 4.953e-03, 6.518e-03, 8.313e-03, 1.033e-02, 1.255e-02, 1.494e-02, 1.749e-02, 2.014e-02, 2.286e-02, 2.559e-02, 2.828e-02, 3.088e-02, 3.334e-02, 3.559e-02, 3.76e-02, 3.931e-02, 4.068e-02, 4.168e-02, 4.229e-02, 4.25e-02, 4.229e-02, 4.168e-02, 4.068e-02, 3.931e-02, 3.76e-02, 3.559e-02, 3.334e-02, 3.088e-02, 2.828e-02, 2.559e-02, 2.286e-02, 2.014e-02, 1.749e-02, 1.494e-02, 1.255e-02, 1.033e-02, 8.313e-03, 6.518e-03, 4.953e-03, 3.618e-03, 2.507e-03, 1.61e-03, 9.075e-04, 3.792e-04, 0, -2.568e-04, -4.184e-04, -5.114e-04, -5.607e-04, -5.887e-04, -6.14e-04, -6.515e-04} \
+   CONFIG.Coefficient_Fractional_Bits {19} \
+   CONFIG.Coefficient_Sets {1} \
+   CONFIG.Coefficient_Sign {Signed} \
+   CONFIG.Coefficient_Structure {Inferred} \
+   CONFIG.Coefficient_Width {16} \
+   CONFIG.ColumnConfig {33} \
+   CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} \
+   CONFIG.Output_Rounding_Mode {Full_Precision} \
+   CONFIG.Output_Width {36} \
+   CONFIG.Quantization {Quantize_Only} \
+   CONFIG.Sample_Frequency {100} \
+ ] $fir_compiler_0
+
   # Create instance: mult_gen_0, and set properties
   set mult_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mult_gen:12.0 mult_gen_0 ]
   set_property -dict [ list \
@@ -194,11 +212,15 @@ proc create_root_design { parentCell } {
    CONFIG.PortBWidth {8} \
  ] $mult_gen_0
 
+  # Create interface connections
+  connect_bd_intf_net -intf_net fir_compiler_0_M_AXIS_DATA [get_bd_intf_ports M_AXIS_DATA_0] [get_bd_intf_pins fir_compiler_0/M_AXIS_DATA]
+
   # Create port connections
-  connect_bd_net -net aclk_0_1 [get_bd_ports aclk_0] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins dds_compiler_1/aclk]
+  connect_bd_net -net aclk_0_1 [get_bd_ports aclk_0] [get_bd_pins dds_compiler_0/aclk] [get_bd_pins dds_compiler_1/aclk] [get_bd_pins fir_compiler_0/aclk]
   connect_bd_net -net dds_compiler_0_m_axis_data_tdata [get_bd_ports sin1] [get_bd_pins dds_compiler_0/m_axis_data_tdata] [get_bd_pins mult_gen_0/A]
+  connect_bd_net -net dds_compiler_0_m_axis_data_tvalid [get_bd_pins dds_compiler_0/m_axis_data_tvalid] [get_bd_pins fir_compiler_0/s_axis_data_tvalid]
   connect_bd_net -net dds_compiler_1_m_axis_data_tdata [get_bd_ports sin2] [get_bd_pins dds_compiler_1/m_axis_data_tdata] [get_bd_pins mult_gen_0/B]
-  connect_bd_net -net mult_gen_0_P [get_bd_ports P_0] [get_bd_pins mult_gen_0/P]
+  connect_bd_net -net mult_gen_0_P [get_bd_pins fir_compiler_0/s_axis_data_tdata] [get_bd_pins mult_gen_0/P]
 
   # Create address segments
 

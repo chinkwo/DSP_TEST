@@ -11,6 +11,7 @@ vlib questa_lib/msim/xbip_dsp48_addsub_v3_0_5
 vlib questa_lib/msim/xbip_dsp48_multadd_v3_0_5
 vlib questa_lib/msim/dds_compiler_v6_0_16
 vlib questa_lib/msim/xil_defaultlib
+vlib questa_lib/msim/fir_compiler_v7_2_11
 
 vmap xbip_utils_v3_0_9 questa_lib/msim/xbip_utils_v3_0_9
 vmap axi_utils_v2_0_5 questa_lib/msim/axi_utils_v2_0_5
@@ -22,6 +23,7 @@ vmap xbip_dsp48_addsub_v3_0_5 questa_lib/msim/xbip_dsp48_addsub_v3_0_5
 vmap xbip_dsp48_multadd_v3_0_5 questa_lib/msim/xbip_dsp48_multadd_v3_0_5
 vmap dds_compiler_v6_0_16 questa_lib/msim/dds_compiler_v6_0_16
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
+vmap fir_compiler_v7_2_11 questa_lib/msim/fir_compiler_v7_2_11
 
 vcom -work xbip_utils_v3_0_9 -64 -93 \
 "../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ipshared/a5f8/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -57,6 +59,12 @@ vcom -work xil_defaultlib -64 -93 \
 
 vlog -work xil_defaultlib -64 \
 "../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v" \
+
+vcom -work fir_compiler_v7_2_11 -64 -93 \
+"../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ipshared/b826/hdl/fir_compiler_v7_2_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

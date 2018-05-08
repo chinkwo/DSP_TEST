@@ -24,8 +24,10 @@ module tb_top(
 
     );
     reg aclk_0	;
-    wire[15:0]	P;
-    
+    wire[39:0]	M_AXIS_DATA_0_tdata;
+      wire M_AXIS_DATA_0_tvalid;
+      wire [7:0]sin1;
+      wire [7:0]sin2;
     initial		
     	aclk_0	=	1;
     
@@ -33,8 +35,9 @@ module tb_top(
     
     
     DSP_TEST_wrapper DSP_TEST_wrapper_i
-       (.P_0(P_0),
-        .aclk_0(aclk_0),
-        .sin1(sin1),
-        .sin2(sin2));
+       (.M_AXIS_DATA_0_tdata(M_AXIS_DATA_0_tdata),
+            .M_AXIS_DATA_0_tvalid(M_AXIS_DATA_0_tvalid),
+            .aclk_0(aclk_0),
+            .sin1(sin1),
+            .sin2(sin2));
 endmodule

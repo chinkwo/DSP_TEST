@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xC9047E8887343FAF" bd:device="xc7a35tfgg484-2" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.1" bd:top="DSP_TEST" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xE503F2DB6063BAEE" bd:device="xc7a35tfgg484-2" bd:isValidated="true" bd:synthFlowMode="None" bd:tool_version="2018.1" bd:top="DSP_TEST" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -13,6 +13,122 @@
       </spirit:parameter>
     </spirit:parameters>
     <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>M_AXIS_DATA_0</spirit:name>
+        <spirit:master/>
+        <spirit:busType spirit:library="interface" spirit:name="axis" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="axis_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>TDATA_NUM_BYTES</spirit:name>
+            <spirit:value>5</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>TDEST_WIDTH</spirit:name>
+            <spirit:value>0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="const_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>TID_WIDTH</spirit:name>
+            <spirit:value>0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="const_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>TUSER_WIDTH</spirit:name>
+            <spirit:value>0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>HAS_TREADY</spirit:name>
+            <spirit:value>0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>HAS_TSTRB</spirit:name>
+            <spirit:value>0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="const_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>HAS_TKEEP</spirit:name>
+            <spirit:value>0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="const_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>HAS_TLAST</spirit:name>
+            <spirit:value>0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>FREQ_HZ</spirit:name>
+            <spirit:value>100000000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>PHASE</spirit:name>
+            <spirit:value>0.000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CLK_DOMAIN</spirit:name>
+            <spirit:value>DSP_TEST_aclk_0</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>LAYERED_METADATA</spirit:name>
+            <spirit:value>xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 36} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chan} size {attribs {resolve_type generated dependency chan_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency chan_stride format long minimum {} maximum {}} value 40} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 36} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} array_type {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value path} size {attribs {resolve_type generated dependency path_size format long minimum {} maximum {}} value 1} stride {attribs {resolve_type generated dependency path_stride format long minimum {} maximum {}} value 40} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency out_width format long minimum {} maximum {}} value 36} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type generated dependency out_fractwidth format long minimum {} maximum {}} value 19} signed {attribs {resolve_type generated dependency out_signed format bool minimum {} maximum {}} value true}}}}}}}}} TDATA_WIDTH 40 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type automatic dependency {} format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} struct {field_data_valid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data_valid} enabled {attribs {resolve_type generated dependency data_valid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency data_valid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} field_chanid {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value chanid} enabled {attribs {resolve_type generated dependency chanid_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency chanid_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency chanid_bitoffset format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} field_user {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value user} enabled {attribs {resolve_type generated dependency user_enabled format bool minimum {} maximum {}} value false} datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type generated dependency user_bitwidth format long minimum {} maximum {}} value 0} bitoffset {attribs {resolve_type generated dependency user_bitoffset format long minimum {} maximum {}} value 0}}}}}} TUSER_WIDTH 0}</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="ip_prop"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
       <spirit:busInterface>
         <spirit:name>CLK.ACLK_0</spirit:name>
         <spirit:displayName>Clk</spirit:displayName>
@@ -58,32 +174,12 @@
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
-        </spirit:parameters>
-      </spirit:busInterface>
-      <spirit:busInterface>
-        <spirit:name>DATA.P_0</spirit:name>
-        <spirit:displayName>Data</spirit:displayName>
-        <spirit:description>Data</spirit:description>
-        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:slave/>
-        <spirit:portMaps>
-          <spirit:portMap>
-            <spirit:logicalPort>
-              <spirit:name>DATA</spirit:name>
-            </spirit:logicalPort>
-            <spirit:physicalPort>
-              <spirit:name>P_0</spirit:name>
-            </spirit:physicalPort>
-          </spirit:portMap>
-        </spirit:portMaps>
-        <spirit:parameters>
           <spirit:parameter>
-            <spirit:name>LAYERED_METADATA</spirit:name>
-            <spirit:value>xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16}</spirit:value>
+            <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+            <spirit:value>M_AXIS_DATA_0</spirit:value>
             <spirit:vendorExtensions>
               <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="ip_prop"/>
+                <bd:configElementInfo bd:valueSource="default"/>
               </bd:configElementInfos>
             </spirit:vendorExtensions>
           </spirit:parameter>
@@ -103,16 +199,6 @@
           <spirit:name>aclk_0</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>P_0</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-            <spirit:vector>
-              <spirit:left>15</spirit:left>
-              <spirit:right>0</spirit:right>
-            </spirit:vector>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
@@ -182,32 +268,64 @@
           <spirit:configurableElementValue spirit:referenceId="PipeStages">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>fir_compiler_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="fir_compiler" spirit:vendor="xilinx.com" spirit:version="7.2"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">DSP_TEST_fir_compiler_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CoefficientVector">-6.515e-04, -6.14e-04, -5.887e-04, -5.607e-04, -5.114e-04, -4.184e-04, -2.568e-04, 0, 3.792e-04, 9.075e-04, 1.61e-03, 2.507e-03, 3.618e-03, 4.953e-03, 6.518e-03, 8.313e-03, 1.033e-02, 1.255e-02, 1.494e-02, 1.749e-02, 2.014e-02, 2.286e-02, 2.559e-02, 2.828e-02, 3.088e-02, 3.334e-02, 3.559e-02, 3.76e-02, 3.931e-02, 4.068e-02, 4.168e-02, 4.229e-02, 4.25e-02, 4.229e-02, 4.168e-02, 4.068e-02, 3.931e-02, 3.76e-02, 3.559e-02, 3.334e-02, 3.088e-02, 2.828e-02, 2.559e-02, 2.286e-02, 2.014e-02, 1.749e-02, 1.494e-02, 1.255e-02, 1.033e-02, 8.313e-03, 6.518e-03, 4.953e-03, 3.618e-03, 2.507e-03, 1.61e-03, 9.075e-04, 3.792e-04, 0, -2.568e-04, -4.184e-04, -5.114e-04, -5.607e-04, -5.887e-04, -6.14e-04, -6.515e-04</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Coefficient_Sets">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Sample_Frequency">100</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Clock_Frequency">100.0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Coefficient_Sign">Signed</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Quantization">Quantize_Only</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Coefficient_Width">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Coefficient_Fractional_Bits">19</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Coefficient_Structure">Inferred</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Output_Rounding_Mode">Full_Precision</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Output_Width">36</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Filter_Architecture">Systolic_Multiply_Accumulate</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="ColumnConfig">33</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
+    <spirit:interconnections/>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
         <spirit:name>aclk_0_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="aclk_0"/>
         <spirit:internalPortReference spirit:componentRef="dds_compiler_1" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="fir_compiler_0" spirit:portRef="aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>dds_compiler_0_m_axis_data_tdata</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="m_axis_data_tdata"/>
-        <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="A"/>
         <spirit:externalPortReference spirit:portRef="sin1"/>
+        <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="A"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>dds_compiler_1_m_axis_data_tdata</spirit:name>
         <spirit:internalPortReference spirit:componentRef="dds_compiler_1" spirit:portRef="m_axis_data_tdata"/>
-        <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="B"/>
         <spirit:externalPortReference spirit:portRef="sin2"/>
+        <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dds_compiler_0_m_axis_data_tvalid</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="m_axis_data_tvalid"/>
+        <spirit:internalPortReference spirit:componentRef="fir_compiler_0" spirit:portRef="s_axis_data_tvalid"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>mult_gen_0_P</spirit:name>
         <spirit:internalPortReference spirit:componentRef="mult_gen_0" spirit:portRef="P"/>
-        <spirit:externalPortReference spirit:portRef="P_0"/>
+        <spirit:internalPortReference spirit:componentRef="fir_compiler_0" spirit:portRef="s_axis_data_tdata"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
+    <spirit:hierConnections>
+      <spirit:hierConnection spirit:interfaceRef="M_AXIS_DATA_0/fir_compiler_0_M_AXIS_DATA">
+        <spirit:activeInterface spirit:busRef="M_AXIS_DATA" spirit:componentRef="fir_compiler_0"/>
+      </spirit:hierConnection>
+    </spirit:hierConnections>
   </spirit:design>
 
 </bd:repository>

@@ -11,4 +11,6 @@ DSP_TEST_dds_compiler_0_0.vhd,vhdl,xil_defaultlib,../../../../DSP_TEST.srcs/sour
 DSP_TEST_dds_compiler_0_1.vhd,vhdl,xil_defaultlib,../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd,
 DSP_TEST_mult_gen_0_0.vhd,vhdl,xil_defaultlib,../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_mult_gen_0_0/sim/DSP_TEST_mult_gen_0_0.vhd,
 DSP_TEST.v,verilog,xil_defaultlib,../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v,
+fir_compiler_v7_2_vh_rfs.vhd,vhdl,fir_compiler_v7_2_11,../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ipshared/b826/hdl/fir_compiler_v7_2_vh_rfs.vhd,
+DSP_TEST_fir_compiler_0_0.vhd,vhdl,xil_defaultlib,../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd,
 glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -12,9 +12,9 @@
 # //  18 U.S.C. Section 1905.
 # //
 # do {tb_top_simulate.do}
-# vsim -voptargs=""+acc"" -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_16 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
-# Start time: 18:14:56 on May 07,2018
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim -voptargs=""+acc"" -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_16 -L xil_defaultlib -L fir_compiler_v7_2_11 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
+# Start time: 11:06:32 on May 08,2018
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_top(fast)
 # Loading work.DSP_TEST_wrapper(fast)
 # Loading work.DSP_TEST(fast)
@@ -29,17 +29,17 @@
 # Loading ieee.math_real(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.dsp_test_dds_compiler_0_1(dsp_test_dds_compiler_0_1_arch)#1
+# Loading work.dsp_test_fir_compiler_0_0(dsp_test_fir_compiler_0_0_arch)#1
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.dsp48e1(dsp48e1_v)#3
 # Loading work.dsp_test_mult_gen_0_0(dsp_test_mult_gen_0_0_arch)#1
-# ** Warning: (vsim-3015) ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v(35): [PCDPC] - Port size (16) does not match connection size (1) for port 'P_0'. The port definition is at: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
-# ** Warning: (vsim-3015) ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v(35): [PCDPC] - Port size (8) does not match connection size (1) for port 'sin1'. The port definition is at: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v(15).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
-# ** Warning: (vsim-3015) ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v(35): [PCDPC] - Port size (8) does not match connection size (1) for port 'sin2'. The port definition is at: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v(16).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
-# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(32): [TFMPC] - Missing Verilog connection for formal VHDL port 'm_axis_data_tvalid'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd
-# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(35): [TFMPC] - Missing Verilog connection for formal VHDL port 'm_axis_data_tvalid'.
+# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(42): [TFMPC] - Missing Verilog connection for formal VHDL port 'm_axis_data_tvalid'.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd
+# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(45): [TFMPC] - Missing Verilog connection for formal VHDL port 's_axis_data_tready'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/fir_compiler_0 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd
 # ** Warning: (vsim-8684) No drivers exist on out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
 # the VHDL standard as the initial values come from the base signal /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>.
@@ -86,31 +86,81 @@
 # This port will contribute value (U) to the signal network.
 # 1
 # 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Chinkwo Yu  Hostname: DESKTOP-JPATCP2  ProcessID: 10236
+#           Attempting to use alternate WLF file "./wlfta2fc77".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta2fc77
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/*
-# (vish-4014) No objects found matching '/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/*'.
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/*
-# (vish-4014) No objects found matching '/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/*'.
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/mult_gen_0/U0/*
-# (vish-4014) No objects found matching '/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/mult_gen_0/U0/*'.
 restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # Loading work.tb_top(fast)
 # Loading work.DSP_TEST_wrapper(fast)
 # Loading work.DSP_TEST(fast)
 # Loading work.glbl(fast)
-# ** Warning: (vsim-3015) ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v(35): [PCDPC] - Port size (16) does not match connection size (1) for port 'P_0'. The port definition is at: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v(13).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
-# ** Warning: (vsim-3015) ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v(35): [PCDPC] - Port size (8) does not match connection size (1) for port 'sin1'. The port definition is at: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v(15).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
-# ** Warning: (vsim-3015) ../../../../DSP_TEST.srcs/sim_1/new/tb_top.v(35): [PCDPC] - Port size (8) does not match connection size (1) for port 'sin2'. The port definition is at: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v(16).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/hdl/DSP_TEST_wrapper.v
-# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(32): [TFMPC] - Missing Verilog connection for formal VHDL port 'm_axis_data_tvalid'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_0/sim/DSP_TEST_dds_compiler_0_0.vhd
-# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(35): [TFMPC] - Missing Verilog connection for formal VHDL port 'm_axis_data_tvalid'.
+# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(42): [TFMPC] - Missing Verilog connection for formal VHDL port 'm_axis_data_tvalid'.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd
+# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(45): [TFMPC] - Missing Verilog connection for formal VHDL port 's_axis_data_tready'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/fir_compiler_0 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_comp# End time: 11:17:16 on May 08,2018, Elapsed time: 0:19:06
+# Errors: 0, Warnings: 44
+ibute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/mult_gen_0/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.tb_top(fast)
+# Loading work.DSP_TEST_wrapper(fast)
+# Loading work.DSP_TEST(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(42): [TFMPC] - Missing Verilog connection for formal VHDL port 'm_axis_data_tvalid'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_dds_compiler_0_1/sim/DSP_TEST_dds_compiler_0_1.vhd
+# ** Warning: (vsim-8822) ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v(45): [TFMPC] - Missing Verilog connection for formal VHDL port 's_axis_data_tready'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/fir_compiler_0 File: ../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd
 # ** Warning: (vsim-8684) No drivers exist on out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
 # Therefore, simulation behavior may occur that is not in compliance with
 # the VHDL standard as the initial values come from the base signal /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/<protected>/<protected>/<protected>.
@@ -155,16 +205,4 @@ restart
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/<protected>/<protected>/<protected>(0) has no driver.
 # This port will contribute value (U) to the signal network.
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/*
-# (vish-4014) No objects found matching '/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/U0/*'.
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/*
-# (vish-4014) No objects found matching '/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/U0/*'.
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/mult_gen_0/U0/*
-# (vish-4014) No objects found matching '/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/mult_gen_0/U0/*'.
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/*
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_1/*
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/mult_gen_0/*
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/*
-run
 run -all
-add wave -position insertpoint sim:/tb_top/DSP_TEST_wrapper_i/DSP_TEST_i/dds_compiler_0/*

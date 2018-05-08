@@ -11,6 +11,7 @@ vlib riviera/xbip_dsp48_addsub_v3_0_5
 vlib riviera/xbip_dsp48_multadd_v3_0_5
 vlib riviera/dds_compiler_v6_0_16
 vlib riviera/xil_defaultlib
+vlib riviera/fir_compiler_v7_2_11
 
 vmap xbip_utils_v3_0_9 riviera/xbip_utils_v3_0_9
 vmap axi_utils_v2_0_5 riviera/axi_utils_v2_0_5
@@ -22,6 +23,7 @@ vmap xbip_dsp48_addsub_v3_0_5 riviera/xbip_dsp48_addsub_v3_0_5
 vmap xbip_dsp48_multadd_v3_0_5 riviera/xbip_dsp48_multadd_v3_0_5
 vmap dds_compiler_v6_0_16 riviera/dds_compiler_v6_0_16
 vmap xil_defaultlib riviera/xil_defaultlib
+vmap fir_compiler_v7_2_11 riviera/fir_compiler_v7_2_11
 
 vcom -work xbip_utils_v3_0_9 -93 \
 "../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ipshared/a5f8/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -57,6 +59,12 @@ vcom -work xil_defaultlib -93 \
 
 vlog -work xil_defaultlib  -v2k5 \
 "../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/sim/DSP_TEST.v" \
+
+vcom -work fir_compiler_v7_2_11 -93 \
+"../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ipshared/b826/hdl/fir_compiler_v7_2_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93 \
+"../../../../DSP_TEST.srcs/sources_1/bd/DSP_TEST/ip/DSP_TEST_fir_compiler_0_0/sim/DSP_TEST_fir_compiler_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
